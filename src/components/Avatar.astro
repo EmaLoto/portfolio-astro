@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets"
+import { slide } from "astro:transitions"
+
+interface Props {
+	size: string
+}
+
+const { size } = Astro.props
+const clase = size ? size.concat('rounded-full') : 'rounded-full'
+---
+<a href="./">
+    <Image class={clase} 
+    src='/me.jpg' 
+    alt="Avatar Caleb Emanuel Loto" 
+    width="1440"
+    height="1440"
+    loading="eager"
+    decoding="async" 
+    transition:animate={slide({ duration: "0.1s" })} 
+    style="mask:radial-gradient(circle, #000 25%,transparent 70%);" />
+</a>

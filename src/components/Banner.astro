@@ -1,0 +1,30 @@
+---
+import Avatar from '../components/Avatar.astro'
+import { info } from '../Solutions/Constantes'
+import {Lectura} from '../Solutions/RenderFunctions'
+---
+<section class='min-h-screen flex justify-center max-lg:px-10 max-lg:py-32 max-lg:flex-col-reverse'>
+    <section class="w-1/2 m-auto max-lg:w-auto">
+        <h1 class='text-6xl max-lg:text-4xl m-auto max-lg:text-center'>
+            <Lectura entrada={info.nombre} />
+        </h1>
+        <br/>
+        <h2 class='text-4xl max-lg:text-2xl mx-auto max-lg:text-center'>
+            <Lectura entrada={info.profesion} />
+        </h2>
+        <br />
+        <p class='text-2xl m-auto'>
+            <i>
+                <Lectura entrada={info.slogan} />
+            </i>
+        </p>
+        <br />
+        <p class='text-xl'>
+            <Lectura entrada={info.descripcionCorta} />
+        </p>
+    </section>
+    <section class="w-1/4 justify-center m-auto max-lg:w-3/4">
+        <Avatar size="w-auto m-auto"/>
+        
+    </section>
+</section>

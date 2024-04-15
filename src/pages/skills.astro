@@ -1,0 +1,36 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Avatar from '../components/Avatar.astro'
+import React from '../Icons/Skills/React.astro'
+import Html from '../Icons/Skills/Html.astro'
+import Css from '../Icons/Skills/Css.astro'
+import Wordpress from '../Icons/Skills/Wordpress.astro'
+import Astroicon from '../Icons/Skills/Astroicon.astro'
+import Tailwindicon from '../Icons/Skills/Tailwindicon.astro'
+import Nodeicon from '../Icons/Skills/Nodeicon.astro'
+import Javascripticon from '../Icons/Skills/Javascripticon.astro'
+import { neon, skillIcons } from '../Solutions/Constantes'
+import Cplusplus from '../Icons/Skills/Cplusplus.astro'
+import Csharp from '../Icons/Skills/Csharp.astro'
+---
+
+<Layout title="Caleb Emanuel Loto - Skills">
+	<section class="min-h-screen flex justify-evenly max-lg:flex-col max-lg:px-10 max-lg:py-32">
+		<section class="flex flex-col text-center m-auto w-1/5 max-lg:w-1/2">
+			<Avatar size="w-auto mx-auto" />
+			<h1 class="text-4xl max-lg:text-4xl" style={neon}>Learned skills</h1>
+		</section>
+		<section class="flex flex-wrap justify-center w-1/2 gap-12 m-auto max-lg:px-0 max-lg:py-20 max-lg:w-auto">
+			<Html size="w-20 h-20 animate-fade-left animate-delay-[100ms]" />
+			<Css size="w-20 h-20 animate-fade-left animate-delay-[200ms]" />
+			<Javascripticon size="w-20 h-20 animate-fade-left animate-delay-[300ms]"/>
+			<Wordpress size="w-20 h-20 animate-fade-left animate-delay-[400ms]"/>
+			<Astroicon size="w-20 h-20 animate-fade-left animate-delay-[500ms]"/>
+			<Tailwindicon size="w-20 h-20 animate-fade-left animate-delay-[600ms]" />
+			<Nodeicon size="w-20 h-20 animate-fade-left animate-delay-[700ms]" />
+			<React size="w-20 h-20 animate-fade-left animate-delay-[800ms]" />
+			<Cplusplus size="w-20 h-20 animate-fade-left animate-delay-[900ms]" />
+			<Csharp size="w-20 h-20 animate-fade-left animate-delay-[1000ms]" />
+		</section>
+	</section>
+</Layout>

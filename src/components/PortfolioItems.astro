@@ -1,0 +1,32 @@
+---
+import { portfolio, neon } from "../Solutions/Constantes"
+import Avatar from "./Avatar.astro"
+const estilosIframe = neon.concat("overflow: hidden;pointer-events:none;")
+---
+<section class="min-h-screen justify-center">
+    <section class="flex justify-center pt-32 pb-10 gap-5">
+        <section class="my-auto">
+            <h1 class="text-4xl">Portfolio</h1>
+        </section>
+        <section class="my-auto">
+            <Avatar size="w-20 h-20"/>
+        </section>
+    </section>
+    <section class="flex flex-wrap gap-x-40 gap-10 w-2/3 justify-center m-auto mb-10">
+        {
+            portfolio.map( (web) => {
+                return(
+                    <section class="mx-auto w-1/3 max-lg:w-auto p-10 hover:scale-110 transition-all">
+                        <iframe class="rounded-lg" style={estilosIframe} src={web.url}></iframe>
+                        <a href={web.url} target="_blank">
+                            <h1 class="text-xl" style={neon}>
+                                <strong>{web.nombre}</strong>
+                            </h1>
+                        </a>
+                        <p>{web.descripcion}</p>
+                    </section>
+                )
+            })
+        }
+    </section>   
+</section>

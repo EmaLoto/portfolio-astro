@@ -1,0 +1,14 @@
+---
+import Redes from '../components/Redes.astro'
+import Menu from '../components/Menu.astro'
+---
+
+<section class='fixed flex min-w-full py-10 bg-black bg-opacity-50 z-50 justify-evenly max-lg:justify-center'>
+    <section class="w-1/3 m-auto max-lg:hidden">
+        <a href="/">Inicio</a>
+    </section>
+    <section class='flex w-1/3 gap-5 justify-between m-auto max-lg:w-auto'>
+        <Menu />
+        <Redes />
+    </section>   
+</section>
