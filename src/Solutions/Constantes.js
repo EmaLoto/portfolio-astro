@@ -63,41 +63,49 @@ export const portfolio = [
     {
         nombre: 'TMI',
         url: 'https://tmimetalurgica.com',
-        descripcion: 'Web institucional de marca metalúrgica'
+        descripcion: 'Web institucional de marca metalúrgica',
+        imagen: "/tmi-home.png"
     },
     {
         nombre: 'Tecnoreko',
         url: 'https://tecnoreko.com.ar',
-        descripcion: 'Web institucional donde se implementó una mejora visual'
+        descripcion: 'Web institucional donde se implementó una mejora visual',
+        imagen: "/tecnoreko-home.png"
     },
     {
         nombre: 'Bravent',
         url: 'https://bravent.com.ar',
-        descripcion: 'Web institucional de marca distribuidora de productos'
+        descripcion: 'Web institucional de marca distribuidora de productos',
+        imagen: "/bravent-home.png"
     },
     {
         nombre: 'Aislagreen',
         url: 'https://aislagreen.com.ar',
-        descripcion: 'Web institucional de marca constructora'
+        descripcion: 'Web institucional de marca constructora',
+        imagen: "/aislagreen-home.png"
     },
     {
         nombre: 'Bahiaclima',
         url: 'https://bahiaclima.com.ar',
-        descripcion: 'Web institucional en donde implementó PHP para generar un botón en cada artículo y se añade automáticamente al cargar nuevos productos'
+        descripcion: 'Web institucional en donde implementó PHP para generar un botón en cada artículo y se añade automáticamente al cargar nuevos productos',
+        imagen: "/bahiaclima-home.png"
     },
     {
         nombre: 'PMK shoes',
         url: 'https://shop.pmkshoes.com',
-        descripcion: 'Ecommerce donde se utiliza una función de sincronización de stock entre varios revenderores de la misma marca'
+        descripcion: 'Ecommerce donde se utiliza una función de sincronización de stock entre varios revenderores de la misma marca',
+        imagen: "/pmkshoes-home.png"
     },
     {
         nombre: 'Broder',
         url: 'https://broderuniformes.com.ar',
-        descripcion: 'Tienda online minorista/mayorista donde los clientes ven los precios correspondientes según el rol de usuario'
+        descripcion: 'Tienda online minorista/mayorista donde los clientes ven los precios correspondientes según el rol de usuario',
+        imagen: "/broder-home.png"
     },
     {
         nombre: 'Espores',
         url: 'https://espores.com.ar',
-        descripcion: 'Tienda online para venta de entradas a carreras a pie'
+        descripcion: 'Tienda online para venta de entradas a carreras a pie',
+        imagen: "/espores-home.png"
     }
 ]
